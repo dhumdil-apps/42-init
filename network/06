@@ -1,0 +1,6 @@
+# To Find Out DNS Server IP Address Used By My Router use the command:
+nslookup {my ip address}
+
+# My IP Address, from V.2 Network / 02:
+ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'i
+

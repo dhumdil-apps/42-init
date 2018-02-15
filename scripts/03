@@ -1,0 +1,3 @@
+FILE1=$1
+
+ls -1h -S $FILE1

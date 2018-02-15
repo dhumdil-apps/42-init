@@ -1,0 +1,1 @@
+In order to schedule tasks on linux, use the command "crontab -e".

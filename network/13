@@ -1,0 +1,33 @@
+With `curl` (client for URL) you get the information about the domain, for example:
+
+$>curl -I google.com
+HTTP/1.1 302 Found
+Location: http://www.google.ro/?gws_rd=cr&dcr=0&ei=lV-FWtTFOIbgkgXip4cI
+Cache-Control: private
+Content-Type: text/html; charset=UTF-8
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Date: Thu, 15 Feb 2018 10:23:17 GMT
+Server: gws
+Content-Length: 266
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: NID=123=VRruSS0bfGoSIqjHFhySh67q4gF91aYf8-dTm8EPgXoyF14SU__yI5QaEXPC9OYTX2M_foqaPQYiD0J-7wroLlVRGKAv0h6U7HEcO_BnxKB6ofBUBxlwQCgGsh2aCku8; expires=Fri, 17-Aug-2018 10:23:17 GMT; path=/; domain=.google.com; HttpOnly
+
+Furthermore filtering that information with `grep`, we get:
+
+$>curl -I google.com | grep "Server"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                   Dload  Upload   Total   Spent    Left  Speed
+     0   268    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+Server: gws
+
+We can continue using pipes like `wk`:
+
+$>curl -I google.com | grep "Server" | awk '{print $2}'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                   Dload  Upload   Total   Spent    Left  Speed
+     0   268    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+gws
+
+So the result is clearly "gws" for this particular case.
+

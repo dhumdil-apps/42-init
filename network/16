@@ -1,0 +1,4 @@
+In order to make the address reroute to a specific domain, in this particular case "intra.42.fr", you have to add the IP Address you want to rereoute you in file /etc/hosts on Unix systems, in this case it's "46.19.122.85", followed by at least one whitespace, followed by the Domain Name. To sum it, the format of writing to this file should be:
+<IP Address> <Domain Name>
+Appending at the bottom of the file /etc/hosts the following will do the trick:
+46.19.122.85 intra.42.fr

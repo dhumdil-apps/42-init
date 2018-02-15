@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "* 4 * * 7 apt-get update >> /var/log/update_script.log" >> /etc/crontab
+echo "* 4 * * 7 apt-get upgrade >> /var/log/update_script.log" >> /etc/crontab

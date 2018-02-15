@@ -1,0 +1,26 @@
+Server:		10.51.2.22
+Address:	10.51.2.22#53
+
+Non-authoritative answer:
+10.51.1.81.in-addr.arpa	name = 10.51.1.81.rev.sfr.net.
+
+Authoritative answers can be found from:
+in-addr.arpa	nameserver = a.in-addr-servers.arpa.
+in-addr.arpa	nameserver = f.in-addr-servers.arpa.
+in-addr.arpa	nameserver = c.in-addr-servers.arpa.
+in-addr.arpa	nameserver = e.in-addr-servers.arpa.
+in-addr.arpa	nameserver = d.in-addr-servers.arpa.
+in-addr.arpa	nameserver = b.in-addr-servers.arpa.
+a.in-addr-servers.arpa	internet address = 199.180.182.53
+a.in-addr-servers.arpa	has AAAA address 2620:37:e000::53
+b.in-addr-servers.arpa	internet address = 199.253.183.183
+b.in-addr-servers.arpa	has AAAA address 2001:500:87::87
+c.in-addr-servers.arpa	internet address = 196.216.169.10
+c.in-addr-servers.arpa	has AAAA address 2001:43f8:110::10
+d.in-addr-servers.arpa	internet address = 200.10.60.53
+d.in-addr-servers.arpa	has AAAA address 2001:13c7:7010::53
+e.in-addr-servers.arpa	internet address = 203.119.86.101
+e.in-addr-servers.arpa	has AAAA address 2001:dd8:6::101
+f.in-addr-servers.arpa	internet address = 193.0.9.1
+f.in-addr-servers.arpa	has AAAA address 2001:67c:e0::1
+
